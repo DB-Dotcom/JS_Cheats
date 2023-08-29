@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JavaScript String Method Cheat Sheet</title>
+    <title>JavaScript frequently used Methods Cheat Sheets</title>
 
     <!-- ----------- Styling ------------------ -->
     <style>
@@ -43,1037 +43,1053 @@
   </head>
 
   <body>
-    <h1>JavaScript String Method Cheat Sheet</h1>
-    <table>
-      <tr>
-        <th>Method</th>
-        <th>Description</th>
-        <th>Example</th>
-        <th>Output</th>
-      </tr>
-      <tr>
-        <td>split()</td>
-        <td>
-          Splits a string into an array of substrings based on a specified
-          separator.
-        </td>
-        <td>"Hello World".split(" ")</td>
-        <td>[ "Hello", "World" ]</td>
-      </tr>
-      <tr>
-        <td>concat()</td>
-        <td>Combines two or more strings and returns a new string.</td>
-        <td>"Hello".concat(" ", "World")</td>
-        <td>"Hello World"</td>
-      </tr>
-      <tr>
-        <td>toUpperCase()</td>
-        <td>Converts a string to uppercase.</td>
-        <td>"Hello".toUpperCase()</td>
-        <td>"HELLO"</td>
-      </tr>
-      <tr>
-        <td>toLowerCase()</td>
-        <td>Converts a string to lowercase.</td>
-        <td>"Hello".toLowerCase()</td>
-        <td>"hello"</td>
-      </tr>
-      <tr>
-        <td>indexOf()</td>
-        <td>
-          Returns the index of the first occurrence of a specified value in a
-          string.
-        </td>
-        <td>"Hello World".indexOf("World")</td>
-        <td>6</td>
-      </tr>
-      <tr>
-        <td>substring()</td>
-        <td>Returns a substring of a string between two indices.</td>
-        <td>"Hello World".substring(0, 5)</td>
-        <td>"Hello"</td>
-      </tr>
-      <tr>
-        <td>replace()</td>
-        <td>
-          Replaces a specified value or regular expression with a replacement in
-          a string.
-        </td>
-        <td>"Hello World".replace("World", "Universe")</td>
-        <td>"Hello Universe"</td>
-      </tr>
-      <tr>
-        <td>trim()</td>
-        <td>Removes whitespace from both ends of a string.</td>
-        <td>" Hello ".trim()</td>
-        <td>"Hello"</td>
-      </tr>
-      <tr>
-        <td>charAt()</td>
-        <td>Returns the character at a specified index in a string.</td>
-        <td>"Hello".charAt(1)</td>
-        <td>"e"</td>
-      </tr>
-      <tr>
-        <td>slice()</td>
-        <td>Returns a portion of a string between two indices.</td>
-        <td>"Hello World".slice(6)</td>
-        <td>"World"</td>
-      </tr>
-    </table>
+    <nav></nav>
 
-    <table>
-      <h1>JavaScript Array Method Cheat Sheet</h1>
-      <tr>
-        <th>Method</th>
-        <th>Description</th>
-        <th>Example</th>
-        <th>Output</th>
-      </tr>
-      <tr>
-        <td>push()</td>
-        <td>
-          Adds one or more elements to the end of an array and returns the new
-          length.
-        </td>
-        <td>arr.push(5)</td>
-        <td>Array length increased by 1</td>
-      </tr>
-      <tr>
-        <td>pop()</td>
-        <td>
-          Removes the last element from an array and returns that element.
-        </td>
-        <td>arr.pop()</td>
-        <td>Last element of the array</td>
-      </tr>
-      <tr>
-        <td>shift()</td>
-        <td>
-          Removes the first element from an array and shifts the remaining
-          elements to a lower index.
-        </td>
-        <td>arr.shift()</td>
-        <td>First element of the array</td>
-      </tr>
-      <tr>
-        <td>unshift()</td>
-        <td>
-          Adds one or more elements to the beginning of an array and returns the
-          new length.
-        </td>
-        <td>arr.unshift(3)</td>
-        <td>Array length increased by 1</td>
-      </tr>
-      <tr>
-        <td>concat()</td>
-        <td>Combines two or more arrays and returns a new array.</td>
-        <td>arr.concat([6, 7])</td>
-        <td>New combined array</td>
-      </tr>
-      <tr>
-        <td>join()</td>
-        <td>
-          Joins all elements of an array into a string using a specified
-          separator.
-        </td>
-        <td>arr.join(", ")</td>
-        <td>Joined string</td>
-      </tr>
-      <tr>
-        <td>map()</td>
-        <td>
-          Creates a new array by applying a function to each element of an
-          existing array.
-        </td>
-        <td>arr.map(x => x * 2)</td>
-        <td>New array with mapped values</td>
-      </tr>
-      <tr>
-        <td>filter()</td>
-        <td>
-          Creates a new array with all elements that pass a test implemented by
-          a provided function.
-        </td>
-        <td>arr.filter(x => x > 3)</td>
-        <td>New array with filtered values</td>
-      </tr>
-      <tr>
-        <td>reduce()</td>
-        <td>
-          Applies a function to an accumulator and each element in the array to
-          reduce it to a single value.
-        </td>
-        <td>arr.reduce((acc, val) => acc + val, 0)</td>
-        <td>Reduced value</td>
-      </tr>
-      <tr>
-        <td>forEach()</td>
-        <td>Executes a provided function once for each array element.</td>
-        <td>arr.forEach(item => console.log(item))</td>
-        <td>No specific output, side effect</td>
-      </tr>
-    </table>
+    <main>
+      <h1>JavaScript String Method Cheat Sheet</h1>
+      <table>
+        <tr>
+          <th>Method</th>
+          <th>Description</th>
+          <th>Example</th>
+          <th>Output</th>
+        </tr>
+        <tr>
+          <td>split()</td>
+          <td>
+            Splits a string into an array of substrings based on a specified
+            separator.
+          </td>
+          <td>"Hello World".split(" ")</td>
+          <td>[ "Hello", "World" ]</td>
+        </tr>
+        <tr>
+          <td>concat()</td>
+          <td>Combines two or more strings and returns a new string.</td>
+          <td>"Hello".concat(" ", "World")</td>
+          <td>"Hello World"</td>
+        </tr>
+        <tr>
+          <td>toUpperCase()</td>
+          <td>Converts a string to uppercase.</td>
+          <td>"Hello".toUpperCase()</td>
+          <td>"HELLO"</td>
+        </tr>
+        <tr>
+          <td>toLowerCase()</td>
+          <td>Converts a string to lowercase.</td>
+          <td>"Hello".toLowerCase()</td>
+          <td>"hello"</td>
+        </tr>
+        <tr>
+          <td>indexOf()</td>
+          <td>
+            Returns the index of the first occurrence of a specified value in a
+            string.
+          </td>
+          <td>"Hello World".indexOf("World")</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>substring()</td>
+          <td>Returns a substring of a string between two indices.</td>
+          <td>"Hello World".substring(0, 5)</td>
+          <td>"Hello"</td>
+        </tr>
+        <tr>
+          <td>replace()</td>
+          <td>
+            Replaces a specified value or regular expression with a replacement
+            in a string.
+          </td>
+          <td>"Hello World".replace("World", "Universe")</td>
+          <td>"Hello Universe"</td>
+        </tr>
+        <tr>
+          <td>trim()</td>
+          <td>Removes whitespace from both ends of a string.</td>
+          <td>" Hello ".trim()</td>
+          <td>"Hello"</td>
+        </tr>
+        <tr>
+          <td>charAt()</td>
+          <td>Returns the character at a specified index in a string.</td>
+          <td>"Hello".charAt(1)</td>
+          <td>"e"</td>
+        </tr>
+        <tr>
+          <td>slice()</td>
+          <td>Returns a portion of a string between two indices.</td>
+          <td>"Hello World".slice(6)</td>
+          <td>"World"</td>
+        </tr>
+      </table>
 
-    <h1>JavaScript Object Method Cheat Sheet</h1>
-    <table>
-      <tr>
-        <th>Method</th>
-        <th>Description</th>
-        <th>Example</th>
-        <th>Output</th>
-      </tr>
-      <tr>
-        <td>Object.keys()</td>
-        <td>Returns an array of keys from an object.</td>
-        <td>Object.keys({a: 1, b: 2})</td>
-        <td>[ "a", "b" ]</td>
-      </tr>
-      <tr>
-        <td>Object.values()</td>
-        <td>Returns an array of values from an object.</td>
-        <td>Object.values({a: 1, b: 2})</td>
-        <td>[ 1, 2 ]</td>
-      </tr>
-      <tr>
-        <td>Object.entries()</td>
-        <td>Returns an array of key-value pairs from an object.</td>
-        <td>Object.entries({a: 1, b: 2})</td>
-        <td>[ [ "a", 1 ], [ "b", 2 ] ]</td>
-      </tr>
-      <tr>
-        <td>Object.assign()</td>
-        <td>
-          Copies the values of all enumerable properties from one or more source
-          objects to a target object.
-        </td>
-        <td>Object.assign({}, {a: 1, b: 2})</td>
-        <td>{ a: 1, b: 2 }</td>
-      </tr>
-      <tr>
-        <td>hasOwnProperty()</td>
-        <td>
-          Returns a boolean indicating whether an object has a specific property
-          as a direct property.
-        </td>
-        <td>obj.hasOwnProperty("a")</td>
-        <td>true or false</td>
-      </tr>
-      <tr>
-        <td>Object.freeze()</td>
-        <td>
-          Freezes an object, preventing new properties from being added and
-          existing properties from being modified or deleted.
-        </td>
-        <td>Object.freeze({a: 1, b: 2})</td>
-        <td>Immutable object</td>
-      </tr>
-      <tr>
-        <td>Object.seal()</td>
-        <td>
-          Seals an object, preventing new properties from being added and
-          existing properties from being deleted.
-        </td>
-        <td>Object.seal({a: 1, b: 2})</td>
-        <td>Object is sealed</td>
-      </tr>
-      <tr>
-        <td>Object.create()</td>
-        <td>
-          Creates a new object with the specified prototype object and
-          properties.
-        </td>
-        <td>Object.create(proto, {prop: {value: 42}})</td>
-        <td>New object with prototype and properties</td>
-      </tr>
-    </table>
+      <table>
+        <h1>JavaScript Array Method Cheat Sheet</h1>
+        <tr>
+          <th>Method</th>
+          <th>Description</th>
+          <th>Example</th>
+          <th>Output</th>
+        </tr>
+        <tr>
+          <td>push()</td>
+          <td>
+            Adds one or more elements to the end of an array and returns the new
+            length.
+          </td>
+          <td>arr.push(5)</td>
+          <td>Array length increased by 1</td>
+        </tr>
+        <tr>
+          <td>pop()</td>
+          <td>
+            Removes the last element from an array and returns that element.
+          </td>
+          <td>arr.pop()</td>
+          <td>Last element of the array</td>
+        </tr>
+        <tr>
+          <td>shift()</td>
+          <td>
+            Removes the first element from an array and shifts the remaining
+            elements to a lower index.
+          </td>
+          <td>arr.shift()</td>
+          <td>First element of the array</td>
+        </tr>
+        <tr>
+          <td>unshift()</td>
+          <td>
+            Adds one or more elements to the beginning of an array and returns
+            the new length.
+          </td>
+          <td>arr.unshift(3)</td>
+          <td>Array length increased by 1</td>
+        </tr>
+        <tr>
+          <td>concat()</td>
+          <td>Combines two or more arrays and returns a new array.</td>
+          <td>arr.concat([6, 7])</td>
+          <td>New combined array</td>
+        </tr>
+        <tr>
+          <td>join()</td>
+          <td>
+            Joins all elements of an array into a string using a specified
+            separator.
+          </td>
+          <td>arr.join(", ")</td>
+          <td>Joined string</td>
+        </tr>
+        <tr>
+          <td>map()</td>
+          <td>
+            Creates a new array by applying a function to each element of an
+            existing array.
+          </td>
+          <td>arr.map(x => x * 2)</td>
+          <td>New array with mapped values</td>
+        </tr>
+        <tr>
+          <td>filter()</td>
+          <td>
+            Creates a new array with all elements that pass a test implemented
+            by a provided function.
+          </td>
+          <td>arr.filter(x => x > 3)</td>
+          <td>New array with filtered values</td>
+        </tr>
+        <tr>
+          <td>reduce()</td>
+          <td>
+            Applies a function to an accumulator and each element in the array
+            to reduce it to a single value.
+          </td>
+          <td>arr.reduce((acc, val) => acc + val, 0)</td>
+          <td>Reduced value</td>
+        </tr>
+        <tr>
+          <td>forEach()</td>
+          <td>Executes a provided function once for each array element.</td>
+          <td>arr.forEach(item => console.log(item))</td>
+          <td>No specific output, side effect</td>
+        </tr>
+      </table>
 
-    <h1>JavaScript Function and Callback Method Cheat Sheet</h1>
-    <table>
-      <tr>
-        <th>Method</th>
-        <th>Description</th>
-        <th>Example</th>
-        <th>Output</th>
-      </tr>
-      <tr>
-        <td>setTimeout()</td>
-        <td>Executes a function after a specified time delay.</td>
-        <td>setTimeout(() => console.log("Delayed message"), 1000)</td>
-        <td>Message after 1 second</td>
-      </tr>
-      <tr>
-        <td>setInterval()</td>
-        <td>Repeats a function at specified intervals.</td>
-        <td>setInterval(() => console.log("Repeated message"), 2000)</td>
-        <td>Message every 2 seconds</td>
-      </tr>
-      <tr>
-        <td>clearTimeout()</td>
-        <td>Clears a timeout previously set by setTimeout().</td>
-        <td>clearTimeout(timeoutID)</td>
-        <td>Timeout cleared</td>
-      </tr>
-      <tr>
-        <td>clearInterval()</td>
-        <td>Clears an interval previously set by setInterval().</td>
-        <td>clearInterval(intervalID)</td>
-        <td>Interval cleared</td>
-      </tr>
-      <tr>
-        <td>addEventListener()</td>
-        <td>Attaches an event handler to an element.</td>
-        <td>element.addEventListener("click", () => console.log("Clicked"))</td>
-        <td>Message on click</td>
-      </tr>
-      <tr>
-        <td>removeEventListener()</td>
-        <td>Removes an event handler from an element.</td>
-        <td>element.removeEventListener("click", handler)</td>
-        <td>Event handler removed</td>
-      </tr>
-      <tr>
-        <td>Promise.resolve()</td>
-        <td>Returns a resolved Promise with a value.</td>
-        <td>Promise.resolve("Resolved value")</td>
-        <td>Resolved Promise with value</td>
-      </tr>
-      <tr>
-        <td>Promise.reject()</td>
-        <td>Returns a rejected Promise with a reason.</td>
-        <td>Promise.reject("Reason for rejection")</td>
-        <td>Rejected Promise with reason</td>
-      </tr>
-      <tr>
-        <td>fetch()</td>
-        <td>
-          Initiates a network request and returns a Promise that resolves to the
-          response.
-        </td>
-        <td>fetch("https://api.example.com/data")</td>
-        <td>Promise with fetched data</td>
-      </tr>
-      <!-- ... (weitere Einträge) ... -->
-    </table>
+      <h1>JavaScript Object Method Cheat Sheet</h1>
+      <table>
+        <tr>
+          <th>Method</th>
+          <th>Description</th>
+          <th>Example</th>
+          <th>Output</th>
+        </tr>
+        <tr>
+          <td>Object.keys()</td>
+          <td>Returns an array of keys from an object.</td>
+          <td>Object.keys({a: 1, b: 2})</td>
+          <td>[ "a", "b" ]</td>
+        </tr>
+        <tr>
+          <td>Object.values()</td>
+          <td>Returns an array of values from an object.</td>
+          <td>Object.values({a: 1, b: 2})</td>
+          <td>[ 1, 2 ]</td>
+        </tr>
+        <tr>
+          <td>Object.entries()</td>
+          <td>Returns an array of key-value pairs from an object.</td>
+          <td>Object.entries({a: 1, b: 2})</td>
+          <td>[ [ "a", 1 ], [ "b", 2 ] ]</td>
+        </tr>
+        <tr>
+          <td>Object.assign()</td>
+          <td>
+            Copies the values of all enumerable properties from one or more
+            source objects to a target object.
+          </td>
+          <td>Object.assign({}, {a: 1, b: 2})</td>
+          <td>{ a: 1, b: 2 }</td>
+        </tr>
+        <tr>
+          <td>hasOwnProperty()</td>
+          <td>
+            Returns a boolean indicating whether an object has a specific
+            property as a direct property.
+          </td>
+          <td>obj.hasOwnProperty("a")</td>
+          <td>true or false</td>
+        </tr>
+        <tr>
+          <td>Object.freeze()</td>
+          <td>
+            Freezes an object, preventing new properties from being added and
+            existing properties from being modified or deleted.
+          </td>
+          <td>Object.freeze({a: 1, b: 2})</td>
+          <td>Immutable object</td>
+        </tr>
+        <tr>
+          <td>Object.seal()</td>
+          <td>
+            Seals an object, preventing new properties from being added and
+            existing properties from being deleted.
+          </td>
+          <td>Object.seal({a: 1, b: 2})</td>
+          <td>Object is sealed</td>
+        </tr>
+        <tr>
+          <td>Object.create()</td>
+          <td>
+            Creates a new object with the specified prototype object and
+            properties.
+          </td>
+          <td>Object.create(proto, {prop: {value: 42}})</td>
+          <td>New object with prototype and properties</td>
+        </tr>
+      </table>
 
-    <h1>JavaScript DOM Manipulation Method Cheat Sheet</h1>
-    <table>
-      <tr>
-        <th>Method</th>
-        <th>Description</th>
-        <th>Example</th>
-        <th>Output</th>
-      </tr>
-      <tr>
-        <td>getElementById()</td>
-        <td>Returns a reference to the element by its ID.</td>
-        <td>document.getElementById("myElement")</td>
-        <td>Element with ID "myElement"</td>
-      </tr>
-      <tr>
-        <td>querySelector()</td>
-        <td>
-          Returns the first element within the document that matches the
-          specified selector.
-        </td>
-        <td>document.querySelector(".myClass")</td>
-        <td>Element with class "myClass"</td>
-      </tr>
-      <tr>
-        <td>querySelectorAll()</td>
-        <td>
-          Returns a NodeList containing all elements that match the specified
-          selector.
-        </td>
-        <td>document.querySelectorAll("p")</td>
-        <td>
-          All
-          <p>elements</p>
-        </td>
-      </tr>
-      <tr>
-        <td>createElement()</td>
-        <td>Creates a new element with the specified tag name.</td>
-        <td>document.createElement("div")</td>
-        <td>New ("div") element</td>
-      </tr>
-      <tr>
-        <td>appendChild()</td>
-        <td>Adds a new child node to an element.</td>
-        <td>parentElement.appendChild(newChild)</td>
-        <td>Child appended to parent</td>
-      </tr>
-      <tr>
-        <td>removeChild()</td>
-        <td>Removes a child node from an element.</td>
-        <td>parentElement.removeChild(child)</td>
-        <td>Child removed from parent</td>
-      </tr>
-      <tr>
-        <td>classList.add()</td>
-        <td>Adds one or more classes to an element's class attribute.</td>
-        <td>element.classList.add("active")</td>
-        <td>Class "active" added</td>
-      </tr>
-      <tr>
-        <td>classList.remove()</td>
-        <td>Removes one or more classes from an element's class attribute.</td>
-        <td>element.classList.remove("inactive")</td>
-        <td>Class "inactive" removed</td>
-      </tr>
-      <tr>
-        <td>setAttribute()</td>
-        <td>Sets the value of an attribute on an element.</td>
-        <td>element.setAttribute("data-id", "123")</td>
-        <td>Attribute set</td>
-      </tr>
-      <tr>
-        <td>removeAttribute()</td>
-        <td>Removes an attribute from an element.</td>
-        <td>element.removeAttribute("data-id")</td>
-        <td>Attribute removed</td>
-      </tr>
-      <!-- ... (weitere Einträge) ... -->
-    </table>
+      <h1>JavaScript Function and Callback Method Cheat Sheet</h1>
+      <table>
+        <tr>
+          <th>Method</th>
+          <th>Description</th>
+          <th>Example</th>
+          <th>Output</th>
+        </tr>
+        <tr>
+          <td>setTimeout()</td>
+          <td>Executes a function after a specified time delay.</td>
+          <td>setTimeout(() => console.log("Delayed message"), 1000)</td>
+          <td>Message after 1 second</td>
+        </tr>
+        <tr>
+          <td>setInterval()</td>
+          <td>Repeats a function at specified intervals.</td>
+          <td>setInterval(() => console.log("Repeated message"), 2000)</td>
+          <td>Message every 2 seconds</td>
+        </tr>
+        <tr>
+          <td>clearTimeout()</td>
+          <td>Clears a timeout previously set by setTimeout().</td>
+          <td>clearTimeout(timeoutID)</td>
+          <td>Timeout cleared</td>
+        </tr>
+        <tr>
+          <td>clearInterval()</td>
+          <td>Clears an interval previously set by setInterval().</td>
+          <td>clearInterval(intervalID)</td>
+          <td>Interval cleared</td>
+        </tr>
+        <tr>
+          <td>addEventListener()</td>
+          <td>Attaches an event handler to an element.</td>
+          <td>
+            element.addEventListener("click", () => console.log("Clicked"))
+          </td>
+          <td>Message on click</td>
+        </tr>
+        <tr>
+          <td>removeEventListener()</td>
+          <td>Removes an event handler from an element.</td>
+          <td>element.removeEventListener("click", handler)</td>
+          <td>Event handler removed</td>
+        </tr>
+        <tr>
+          <td>Promise.resolve()</td>
+          <td>Returns a resolved Promise with a value.</td>
+          <td>Promise.resolve("Resolved value")</td>
+          <td>Resolved Promise with value</td>
+        </tr>
+        <tr>
+          <td>Promise.reject()</td>
+          <td>Returns a rejected Promise with a reason.</td>
+          <td>Promise.reject("Reason for rejection")</td>
+          <td>Rejected Promise with reason</td>
+        </tr>
+        <tr>
+          <td>fetch()</td>
+          <td>
+            Initiates a network request and returns a Promise that resolves to
+            the response.
+          </td>
+          <td>fetch("https://api.example.com/data")</td>
+          <td>Promise with fetched data</td>
+        </tr>
+        <!-- ... (weitere Einträge) ... -->
+      </table>
 
-    <h2>Array-Destrukturierung und Spread-Operator</h2>
-    <table>
-      <tr>
-        <th>Method</th>
-        <th>Description</th>
-        <th>Example</th>
-        <th>Output</th>
-      </tr>
-      <tr>
-        <td>...array</td>
-        <td>Spread operator expands an array into individual elements.</td>
-        <td>const newArray = [...oldArray, 4, 5]</td>
-        <td>[1, 2, 3, 4, 5]</td>
-      </tr>
-      <tr>
-        <td>const [item1, item2] = array</td>
-        <td>Array destructuring assigns array elements to variables.</td>
-        <td>const [first, second] = [1, 2]</td>
-        <td>first = 1, second = 2</td>
-      </tr>
-    </table>
+      <h1>JavaScript DOM Manipulation Method Cheat Sheet</h1>
+      <table>
+        <tr>
+          <th>Method</th>
+          <th>Description</th>
+          <th>Example</th>
+          <th>Output</th>
+        </tr>
+        <tr>
+          <td>getElementById()</td>
+          <td>Returns a reference to the element by its ID.</td>
+          <td>document.getElementById("myElement")</td>
+          <td>Element with ID "myElement"</td>
+        </tr>
+        <tr>
+          <td>querySelector()</td>
+          <td>
+            Returns the first element within the document that matches the
+            specified selector.
+          </td>
+          <td>document.querySelector(".myClass")</td>
+          <td>Element with class "myClass"</td>
+        </tr>
+        <tr>
+          <td>querySelectorAll()</td>
+          <td>
+            Returns a NodeList containing all elements that match the specified
+            selector.
+          </td>
+          <td>document.querySelectorAll("p")</td>
+          <td>
+            All
+            <p>elements</p>
+          </td>
+        </tr>
+        <tr>
+          <td>createElement()</td>
+          <td>Creates a new element with the specified tag name.</td>
+          <td>document.createElement("div")</td>
+          <td>New ("div") element</td>
+        </tr>
+        <tr>
+          <td>appendChild()</td>
+          <td>Adds a new child node to an element.</td>
+          <td>parentElement.appendChild(newChild)</td>
+          <td>Child appended to parent</td>
+        </tr>
+        <tr>
+          <td>removeChild()</td>
+          <td>Removes a child node from an element.</td>
+          <td>parentElement.removeChild(child)</td>
+          <td>Child removed from parent</td>
+        </tr>
+        <tr>
+          <td>classList.add()</td>
+          <td>Adds one or more classes to an element's class attribute.</td>
+          <td>element.classList.add("active")</td>
+          <td>Class "active" added</td>
+        </tr>
+        <tr>
+          <td>classList.remove()</td>
+          <td>
+            Removes one or more classes from an element's class attribute.
+          </td>
+          <td>element.classList.remove("inactive")</td>
+          <td>Class "inactive" removed</td>
+        </tr>
+        <tr>
+          <td>setAttribute()</td>
+          <td>Sets the value of an attribute on an element.</td>
+          <td>element.setAttribute("data-id", "123")</td>
+          <td>Attribute set</td>
+        </tr>
+        <tr>
+          <td>removeAttribute()</td>
+          <td>Removes an attribute from an element.</td>
+          <td>element.removeAttribute("data-id")</td>
+          <td>Attribute removed</td>
+        </tr>
+        <!-- ... (weitere Einträge) ... -->
+      </table>
 
-    <h2>Objekt-Destrukturierung</h2>
-    <table>
-      <tr>
-        <th>Method</th>
-        <th>Description</th>
-        <th>Example</th>
-        <th>Output</th>
-      </tr>
-      <tr>
-        <td>const { prop1, prop2 } = object</td>
-        <td>Object destructuring assigns object properties to variables.</td>
-        <td>const { name, age } = { name: "John", age: 30 }</td>
-        <td>name = "John", age = 30</td>
-      </tr>
-    </table>
+      <h2>Array-Destrukturierung und Spread-Operator</h2>
+      <table>
+        <tr>
+          <th>Method</th>
+          <th>Description</th>
+          <th>Example</th>
+          <th>Output</th>
+        </tr>
+        <tr>
+          <td>...array</td>
+          <td>Spread operator expands an array into individual elements.</td>
+          <td>const newArray = [...oldArray, 4, 5]</td>
+          <td>[1, 2, 3, 4, 5]</td>
+        </tr>
+        <tr>
+          <td>const [item1, item2] = array</td>
+          <td>Array destructuring assigns array elements to variables.</td>
+          <td>const [first, second] = [1, 2]</td>
+          <td>first = 1, second = 2</td>
+        </tr>
+      </table>
 
-    <h2>Promises und async/await-Methoden</h2>
-    <table>
-      <tr>
-        <th>Method</th>
-        <th>Description</th>
-        <th>Example</th>
-        <th>Output</th>
-      </tr>
-      <tr>
-        <td>then()</td>
-        <td>Attaches a callback for the resolution of a Promise.</td>
-        <td>promise.then(result => console.log(result))</td>
-        <td>Result of resolved Promise</td>
-      </tr>
-      <tr>
-        <td>catch()</td>
-        <td>Attaches a callback for the rejection of a Promise.</td>
-        <td>promise.catch(error => console.error(error))</td>
-        <td>Error from rejected Promise</td>
-      </tr>
-      <tr>
-        <td>finally()</td>
-        <td>Attaches a callback that is invoked when a Promise is settled.</td>
-        <td>promise.finally(() => console.log("Done"))</td>
-        <td>Message after Promise is settled</td>
-      </tr>
-      <tr>
-        <td>async function</td>
-        <td>Defines an asynchronous function that returns a Promise.</td>
-        <td>async function fetchData() { /* ... */ }</td>
-        <td>Asynchronous function</td>
-      </tr>
-      <tr>
-        <td>await</td>
-        <td>
-          Pauses the execution of an async function until the Promise is
-          resolved.
-        </td>
-        <td>const result = await fetchData()</td>
-        <td>Resolved value from Promise</td>
-      </tr>
-    </table>
+      <h2>Objekt-Destrukturierung</h2>
+      <table>
+        <tr>
+          <th>Method</th>
+          <th>Description</th>
+          <th>Example</th>
+          <th>Output</th>
+        </tr>
+        <tr>
+          <td>const { prop1, prop2 } = object</td>
+          <td>Object destructuring assigns object properties to variables.</td>
+          <td>const { name, age } = { name: "John", age: 30 }</td>
+          <td>name = "John", age = 30</td>
+        </tr>
+      </table>
 
-    <h2>Math-Methoden</h2>
-    <table>
-      <tr>
-        <th>Method</th>
-        <th>Description</th>
-        <th>Example</th>
-        <th>Output</th>
-      </tr>
-      <tr>
-        <td>Math.random()</td>
-        <td>
-          Returns a random number between 0 (inclusive) and 1 (exclusive).
-        </td>
-        <td>Math.random()</td>
-        <td>Random number between 0 and 1</td>
-      </tr>
-      <tr>
-        <td>Math.floor()</td>
-        <td>Rounds a number down to the nearest integer.</td>
-        <td>Math.floor(3.9)</td>
-        <td>3</td>
-      </tr>
-      <tr>
-        <td>Math.ceil()</td>
-        <td>Rounds a number up to the nearest integer.</td>
-        <td>Math.ceil(3.1)</td>
-        <td>4</td>
-      </tr>
-      <tr>
-        <td>Math.round()</td>
-        <td>Rounds a number to the nearest integer.</td>
-        <td>Math.round(3.5)</td>
-        <td>4</td>
-      </tr>
-      <tr>
-        <td>Math.max()</td>
-        <td>Returns the largest of zero or more numbers.</td>
-        <td>Math.max(2, 5, 1)</td>
-        <td>5</td>
-      </tr>
-      <tr>
-        <td>Math.min()</td>
-        <td>Returns the smallest of zero or more numbers.</td>
-        <td>Math.min(2, 5, 1)</td>
-        <td>1</td>
-      </tr>
-      <tr>
-        <td>Math.abs()</td>
-        <td>Returns the absolute value of a number.</td>
-        <td>Math.abs(-4)</td>
-        <td>4</td>
-      </tr>
-    </table>
+      <h2>Promises und async/await-Methoden</h2>
+      <table>
+        <tr>
+          <th>Method</th>
+          <th>Description</th>
+          <th>Example</th>
+          <th>Output</th>
+        </tr>
+        <tr>
+          <td>then()</td>
+          <td>Attaches a callback for the resolution of a Promise.</td>
+          <td>promise.then(result => console.log(result))</td>
+          <td>Result of resolved Promise</td>
+        </tr>
+        <tr>
+          <td>catch()</td>
+          <td>Attaches a callback for the rejection of a Promise.</td>
+          <td>promise.catch(error => console.error(error))</td>
+          <td>Error from rejected Promise</td>
+        </tr>
+        <tr>
+          <td>finally()</td>
+          <td>
+            Attaches a callback that is invoked when a Promise is settled.
+          </td>
+          <td>promise.finally(() => console.log("Done"))</td>
+          <td>Message after Promise is settled</td>
+        </tr>
+        <tr>
+          <td>async function</td>
+          <td>Defines an asynchronous function that returns a Promise.</td>
+          <td>async function fetchData() { /* ... */ }</td>
+          <td>Asynchronous function</td>
+        </tr>
+        <tr>
+          <td>await</td>
+          <td>
+            Pauses the execution of an async function until the Promise is
+            resolved.
+          </td>
+          <td>const result = await fetchData()</td>
+          <td>Resolved value from Promise</td>
+        </tr>
+      </table>
 
-    <h2>Reguläre Ausdrücke (Regex)</h2>
-    <table>
-      <tr>
-        <th>Method</th>
-        <th>Description</th>
-        <th>Example</th>
-        <th>Output</th>
-      </tr>
-      <tr>
-        <td>test()</td>
-        <td>Tests if a string matches a regular expression.</td>
-        <td>/abc/.test("abcdef")</td>
-        <td>true</td>
-      </tr>
-      <tr>
-        <td>exec()</td>
-        <td>Executes a search for a match in a string.</td>
-        <td>/abc/.exec("abcdef")</td>
-        <td>["abc"]</td>
-      </tr>
-      <tr>
-        <td>match()</td>
-        <td>Searches a string for a match against a regular expression.</td>
-        <td>"abcdef".match(/abc/)</td>
-        <td>["abc"]</td>
-      </tr>
-      <tr>
-        <td>replace()</td>
-        <td>Replaces matches in a string with a new substring.</td>
-        <td>"abcdef".replace(/abc/, "xyz")</td>
-        <td>"xyzdef"</td>
-      </tr>
-      <tr>
-        <td>search()</td>
-        <td>
-          Searches a string for a match against a regular expression and returns
-          the index of the match.
-        </td>
-        <td>"abcdef".search(/abc/)</td>
-        <td>0</td>
-      </tr>
-    </table>
+      <h2>Math-Methoden</h2>
+      <table>
+        <tr>
+          <th>Method</th>
+          <th>Description</th>
+          <th>Example</th>
+          <th>Output</th>
+        </tr>
+        <tr>
+          <td>Math.random()</td>
+          <td>
+            Returns a random number between 0 (inclusive) and 1 (exclusive).
+          </td>
+          <td>Math.random()</td>
+          <td>Random number between 0 and 1</td>
+        </tr>
+        <tr>
+          <td>Math.floor()</td>
+          <td>Rounds a number down to the nearest integer.</td>
+          <td>Math.floor(3.9)</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>Math.ceil()</td>
+          <td>Rounds a number up to the nearest integer.</td>
+          <td>Math.ceil(3.1)</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>Math.round()</td>
+          <td>Rounds a number to the nearest integer.</td>
+          <td>Math.round(3.5)</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>Math.max()</td>
+          <td>Returns the largest of zero or more numbers.</td>
+          <td>Math.max(2, 5, 1)</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>Math.min()</td>
+          <td>Returns the smallest of zero or more numbers.</td>
+          <td>Math.min(2, 5, 1)</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>Math.abs()</td>
+          <td>Returns the absolute value of a number.</td>
+          <td>Math.abs(-4)</td>
+          <td>4</td>
+        </tr>
+      </table>
 
-    <h2>Array-Methoden für Funktionale Programmierung</h2>
-    <table>
-      <tr>
-        <th>Method</th>
-        <th>Description</th>
-        <th>Example</th>
-        <th>Output</th>
-      </tr>
-      <tr>
-        <td>map()</td>
-        <td>
-          Creates a new array with the results of calling a provided function on
-          every element.
-        </td>
-        <td>[1, 2, 3].map(x => x * 2)</td>
-        <td>[2, 4, 6]</td>
-      </tr>
-      <tr>
-        <td>filter()</td>
-        <td>
-          Creates a new array with all elements that pass the test of a provided
-          function.
-        </td>
-        <td>[1, 2, 3, 4, 5].filter(x => x % 2 === 0)</td>
-        <td>[2, 4]</td>
-      </tr>
-      <tr>
-        <td>reduce()</td>
-        <td>
-          Applies a function against an accumulator and each element, reducing
-          it to a single value.
-        </td>
-        <td>[1, 2, 3].reduce((acc, curr) => acc + curr, 0)</td>
-        <td>6</td>
-      </tr>
-      <tr>
-        <td>forEach()</td>
-        <td>Calls a provided function once for each element in the array.</td>
-        <td>[1, 2, 3].forEach(x => console.log(x))</td>
-        <td>Logs each element</td>
-      </tr>
-      <tr>
-        <td>every()</td>
-        <td>
-          Tests whether all elements in the array pass the test of a provided
-          function.
-        </td>
-        <td>[2, 4, 6].every(x => x % 2 === 0)</td>
-        <td>true</td>
-      </tr>
-      <tr>
-        <td>some()</td>
-        <td>
-          Tests whether at least one element in the array passes the test of a
-          provided function.
-        </td>
-        <td>[1, 3, 5].some(x => x % 2 === 0)</td>
-        <td>false</td>
-      </tr>
-    </table>
+      <h2>Reguläre Ausdrücke (Regex)</h2>
+      <table>
+        <tr>
+          <th>Method</th>
+          <th>Description</th>
+          <th>Example</th>
+          <th>Output</th>
+        </tr>
+        <tr>
+          <td>test()</td>
+          <td>Tests if a string matches a regular expression.</td>
+          <td>/abc/.test("abcdef")</td>
+          <td>true</td>
+        </tr>
+        <tr>
+          <td>exec()</td>
+          <td>Executes a search for a match in a string.</td>
+          <td>/abc/.exec("abcdef")</td>
+          <td>["abc"]</td>
+        </tr>
+        <tr>
+          <td>match()</td>
+          <td>Searches a string for a match against a regular expression.</td>
+          <td>"abcdef".match(/abc/)</td>
+          <td>["abc"]</td>
+        </tr>
+        <tr>
+          <td>replace()</td>
+          <td>Replaces matches in a string with a new substring.</td>
+          <td>"abcdef".replace(/abc/, "xyz")</td>
+          <td>"xyzdef"</td>
+        </tr>
+        <tr>
+          <td>search()</td>
+          <td>
+            Searches a string for a match against a regular expression and
+            returns the index of the match.
+          </td>
+          <td>"abcdef".search(/abc/)</td>
+          <td>0</td>
+        </tr>
+      </table>
 
-    <h2>Array-Methoden für Manipulation und Bearbeitung</h2>
-    <table>
-      <tr>
-        <th>Method</th>
-        <th>Description</th>
-        <th>Example</th>
-        <th>Output</th>
-      </tr>
-      <tr>
-        <td>sort()</td>
-        <td>
-          Sorts the elements of an array in place and returns the sorted array.
-        </td>
-        <td>[3, 1, 2].sort()</td>
-        <td>[1, 2, 3]</td>
-      </tr>
-      <tr>
-        <td>reverse()</td>
-        <td>
-          Reverses the elements of an array in place and returns the reversed
-          array.
-        </td>
-        <td>[1, 2, 3].reverse()</td>
-        <td>[3, 2, 1]</td>
-      </tr>
-      <tr>
-        <td>splice()</td>
-        <td>
-          Changes the contents of an array by removing or replacing elements.
-        </td>
-        <td>const arr = [1, 2, 3]; arr.splice(1, 1, 4)</td>
-        <td>[1, 4, 3]</td>
-      </tr>
-      <tr>
-        <td>concat()</td>
-        <td>
-          Returns a new array that includes values from the original array and
-          additional arrays/elements.
-        </td>
-        <td>[1, 2].concat([3, 4], 5)</td>
-        <td>[1, 2, 3, 4, 5]</td>
-      </tr>
-    </table>
+      <h2>Array-Methoden für Funktionale Programmierung</h2>
+      <table>
+        <tr>
+          <th>Method</th>
+          <th>Description</th>
+          <th>Example</th>
+          <th>Output</th>
+        </tr>
+        <tr>
+          <td>map()</td>
+          <td>
+            Creates a new array with the results of calling a provided function
+            on every element.
+          </td>
+          <td>[1, 2, 3].map(x => x * 2)</td>
+          <td>[2, 4, 6]</td>
+        </tr>
+        <tr>
+          <td>filter()</td>
+          <td>
+            Creates a new array with all elements that pass the test of a
+            provided function.
+          </td>
+          <td>[1, 2, 3, 4, 5].filter(x => x % 2 === 0)</td>
+          <td>[2, 4]</td>
+        </tr>
+        <tr>
+          <td>reduce()</td>
+          <td>
+            Applies a function against an accumulator and each element, reducing
+            it to a single value.
+          </td>
+          <td>[1, 2, 3].reduce((acc, curr) => acc + curr, 0)</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>forEach()</td>
+          <td>Calls a provided function once for each element in the array.</td>
+          <td>[1, 2, 3].forEach(x => console.log(x))</td>
+          <td>Logs each element</td>
+        </tr>
+        <tr>
+          <td>every()</td>
+          <td>
+            Tests whether all elements in the array pass the test of a provided
+            function.
+          </td>
+          <td>[2, 4, 6].every(x => x % 2 === 0)</td>
+          <td>true</td>
+        </tr>
+        <tr>
+          <td>some()</td>
+          <td>
+            Tests whether at least one element in the array passes the test of a
+            provided function.
+          </td>
+          <td>[1, 3, 5].some(x => x % 2 === 0)</td>
+          <td>false</td>
+        </tr>
+      </table>
 
-    <h2>Zeit- und Datums-Methoden</h2>
-    <table>
-      <tr>
-        <th>Method</th>
-        <th>Description</th>
-        <th>Example</th>
-        <th>Output</th>
-      </tr>
-      <tr>
-        <td>Date.now()</td>
-        <td>
-          Returns the current timestamp in milliseconds since January 1, 1970
-          (UTC).
-        </td>
-        <td>Date.now()</td>
-        <td>Current timestamp</td>
-      </tr>
-      <tr>
-        <td>new Date()</td>
-        <td>
-          Creates a new Date object representing the current date and time.
-        </td>
-        <td>const currentDate = new Date()</td>
-        <td>Current date and time</td>
-      </tr>
-      <tr>
-        <td>getFullYear()</td>
-        <td>Returns the year of a Date object as a four-digit number.</td>
-        <td>const year = currentDate.getFullYear()</td>
-        <td>Current year</td>
-      </tr>
-      <tr>
-        <td>getMonth()</td>
-        <td>
-          Returns the month of a Date object as a zero-based index (0-11).
-        </td>
-        <td>const month = currentDate.getMonth()</td>
-        <td>Current month</td>
-      </tr>
-      <tr>
-        <td>getDate()</td>
-        <td>Returns the day of the month of a Date object (1-31).</td>
-        <td>const day = currentDate.getDate()</td>
-        <td>Current day</td>
-      </tr>
-      <tr>
-        <td>getTime()</td>
-        <td>Returns the numeric value of the time for a Date object.</td>
-        <td>const time = currentDate.getTime()</td>
-        <td>Current time in milliseconds</td>
-      </tr>
-      <tr>
-        <td>toLocaleString()</td>
-        <td>
-          Returns a string representing the Date object's date and time in a
-          localized format.
-        </td>
-        <td>const formattedDate = currentDate.toLocaleString()</td>
-        <td>Formatted date and time</td>
-      </tr>
-    </table>
+      <h2>Array-Methoden für Manipulation und Bearbeitung</h2>
+      <table>
+        <tr>
+          <th>Method</th>
+          <th>Description</th>
+          <th>Example</th>
+          <th>Output</th>
+        </tr>
+        <tr>
+          <td>sort()</td>
+          <td>
+            Sorts the elements of an array in place and returns the sorted
+            array.
+          </td>
+          <td>[3, 1, 2].sort()</td>
+          <td>[1, 2, 3]</td>
+        </tr>
+        <tr>
+          <td>reverse()</td>
+          <td>
+            Reverses the elements of an array in place and returns the reversed
+            array.
+          </td>
+          <td>[1, 2, 3].reverse()</td>
+          <td>[3, 2, 1]</td>
+        </tr>
+        <tr>
+          <td>splice()</td>
+          <td>
+            Changes the contents of an array by removing or replacing elements.
+          </td>
+          <td>const arr = [1, 2, 3]; arr.splice(1, 1, 4)</td>
+          <td>[1, 4, 3]</td>
+        </tr>
+        <tr>
+          <td>concat()</td>
+          <td>
+            Returns a new array that includes values from the original array and
+            additional arrays/elements.
+          </td>
+          <td>[1, 2].concat([3, 4], 5)</td>
+          <td>[1, 2, 3, 4, 5]</td>
+        </tr>
+      </table>
 
-    <h2>Konsolen-Methoden</h2>
-    <table>
-      <tr>
-        <th>Method</th>
-        <th>Description</th>
-        <th>Example</th>
-        <th>Output</th>
-      </tr>
-      <tr>
-        <td>console.log()</td>
-        <td>Logs a message to the console with optional substitutions.</td>
-        <td>console.log("Hello, World")</td>
-        <td>Hello, world!</td>
-      </tr>
-      <tr>
-        <td>console.warn()</td>
-        <td>Logs a warning message to the console.</td>
-        <td>console.warn("This is a warning!")</td>
-        <td>Warning message</td>
-      </tr>
-      <tr>
-        <td>console.error()</td>
-        <td>Logs an error message to the console.</td>
-        <td>console.error("This is an error!")</td>
-        <td>Error message</td>
-      </tr>
-      <tr>
-        <td>console.info()</td>
-        <td>Logs an informational message to the console.</td>
-        <td>console.info("This is an info message.")</td>
-        <td>Info message</td>
-      </tr>
-      <tr>
-        <td>console.group()</td>
-        <td>Creates a new inline group in the console.</td>
-        <td>
-          console.group("Group"); console.log("Hello"); console.groupEnd();
-        </td>
-        <td>Indented log messages</td>
-      </tr>
-    </table>
+      <h2>Zeit- und Datums-Methoden</h2>
+      <table>
+        <tr>
+          <th>Method</th>
+          <th>Description</th>
+          <th>Example</th>
+          <th>Output</th>
+        </tr>
+        <tr>
+          <td>Date.now()</td>
+          <td>
+            Returns the current timestamp in milliseconds since January 1, 1970
+            (UTC).
+          </td>
+          <td>Date.now()</td>
+          <td>Current timestamp</td>
+        </tr>
+        <tr>
+          <td>new Date()</td>
+          <td>
+            Creates a new Date object representing the current date and time.
+          </td>
+          <td>const currentDate = new Date()</td>
+          <td>Current date and time</td>
+        </tr>
+        <tr>
+          <td>getFullYear()</td>
+          <td>Returns the year of a Date object as a four-digit number.</td>
+          <td>const year = currentDate.getFullYear()</td>
+          <td>Current year</td>
+        </tr>
+        <tr>
+          <td>getMonth()</td>
+          <td>
+            Returns the month of a Date object as a zero-based index (0-11).
+          </td>
+          <td>const month = currentDate.getMonth()</td>
+          <td>Current month</td>
+        </tr>
+        <tr>
+          <td>getDate()</td>
+          <td>Returns the day of the month of a Date object (1-31).</td>
+          <td>const day = currentDate.getDate()</td>
+          <td>Current day</td>
+        </tr>
+        <tr>
+          <td>getTime()</td>
+          <td>Returns the numeric value of the time for a Date object.</td>
+          <td>const time = currentDate.getTime()</td>
+          <td>Current time in milliseconds</td>
+        </tr>
+        <tr>
+          <td>toLocaleString()</td>
+          <td>
+            Returns a string representing the Date object's date and time in a
+            localized format.
+          </td>
+          <td>const formattedDate = currentDate.toLocaleString()</td>
+          <td>Formatted date and time</td>
+        </tr>
+      </table>
 
-    <h2>JSON-Methoden</h2>
-    <table>
-      <tr>
-        <th>Method</th>
-        <th>Description</th>
-        <th>Example</th>
-        <th>Output</th>
-      </tr>
-      <tr>
-        <td>JSON.parse()</td>
-        <td>Parses a JSON string and returns a JavaScript object.</td>
-        <td>const obj = JSON.parse('{"name": "John", "age": 30}')</td>
-        <td>JavaScript object</td>
-      </tr>
-      <tr>
-        <td>JSON.stringify()</td>
-        <td>Converts a JavaScript object to a JSON string.</td>
-        <td>const jsonStr = JSON.stringify(obj)</td>
-        <td>JSON string</td>
-      </tr>
-    </table>
+      <h2>Konsolen-Methoden</h2>
+      <table>
+        <tr>
+          <th>Method</th>
+          <th>Description</th>
+          <th>Example</th>
+          <th>Output</th>
+        </tr>
+        <tr>
+          <td>console.log()</td>
+          <td>Logs a message to the console with optional substitutions.</td>
+          <td>console.log("Hello, World")</td>
+          <td>Hello, world!</td>
+        </tr>
+        <tr>
+          <td>console.warn()</td>
+          <td>Logs a warning message to the console.</td>
+          <td>console.warn("This is a warning!")</td>
+          <td>Warning message</td>
+        </tr>
+        <tr>
+          <td>console.error()</td>
+          <td>Logs an error message to the console.</td>
+          <td>console.error("This is an error!")</td>
+          <td>Error message</td>
+        </tr>
+        <tr>
+          <td>console.info()</td>
+          <td>Logs an informational message to the console.</td>
+          <td>console.info("This is an info message.")</td>
+          <td>Info message</td>
+        </tr>
+        <tr>
+          <td>console.group()</td>
+          <td>Creates a new inline group in the console.</td>
+          <td>
+            console.group("Group"); console.log("Hello"); console.groupEnd();
+          </td>
+          <td>Indented log messages</td>
+        </tr>
+      </table>
 
-    <h2>Number-Methoden</h2>
-    <table>
-      <tr>
-        <th>Method</th>
-        <th>Description</th>
-        <th>Example</th>
-        <th>Output</th>
-      </tr>
-      <tr>
-        <td>parseInt()</td>
-        <td>Parses a string and returns an integer.</td>
-        <td>const num = parseInt("42")</td>
-        <td>42</td>
-      </tr>
-      <tr>
-        <td>parseFloat()</td>
-        <td>Parses a string and returns a floating-point number.</td>
-        <td>const num = parseFloat("3.14")</td>
-        <td>3.14</td>
-      </tr>
-      <tr>
-        <td>toFixed()</td>
-        <td>Formats a number with a specified number of decimals.</td>
-        <td>(5.678).toFixed(2)</td>
-        <td>5.68</td>
-      </tr>
-      <tr>
-        <td>toPrecision()</td>
-        <td>Formats a number with a specified length.</td>
-        <td>(123.456).toPrecision(4)</td>
-        <td>123.5</td>
-      </tr>
-      <tr>
-        <td>isNaN()</td>
-        <td>Checks if a value is NaN (Not-a-Number).</td>
-        <td>isNaN("Hello")</td>
-        <td>true</td>
-      </tr>
-    </table>
+      <h2>JSON-Methoden</h2>
+      <table>
+        <tr>
+          <th>Method</th>
+          <th>Description</th>
+          <th>Example</th>
+          <th>Output</th>
+        </tr>
+        <tr>
+          <td>JSON.parse()</td>
+          <td>Parses a JSON string and returns a JavaScript object.</td>
+          <td>const obj = JSON.parse('{"name": "John", "age": 30}')</td>
+          <td>JavaScript object</td>
+        </tr>
+        <tr>
+          <td>JSON.stringify()</td>
+          <td>Converts a JavaScript object to a JSON string.</td>
+          <td>const jsonStr = JSON.stringify(obj)</td>
+          <td>JSON string</td>
+        </tr>
+      </table>
 
-    <h2>Array-Methoden für Suche und Prüfung</h2>
-    <table>
-      <tr>
-        <th>Method</th>
-        <th>Description</th>
-        <th>Example</th>
-        <th>Output</th>
-      </tr>
-      <tr>
-        <td>indexOf()</td>
-        <td>
-          Returns the first index at which a given element is found in the
-          array.
-        </td>
-        <td>[1, 2, 3, 2].indexOf(2)</td>
-        <td>1</td>
-      </tr>
-      <tr>
-        <td>lastIndexOf()</td>
-        <td>
-          Returns the last index at which a given element is found in the array.
-        </td>
-        <td>[1, 2, 3, 2].lastIndexOf(2)</td>
-        <td>3</td>
-      </tr>
-      <tr>
-        <td>includes()</td>
-        <td>Checks if an array contains a certain element.</td>
-        <td>[1, 2, 3].includes(2)</td>
-        <td>true</td>
-      </tr>
-      <tr>
-        <td>find()</td>
-        <td>
-          Returns the first element in the array that satisfies a provided
-          testing function.
-        </td>
-        <td>[1, 2, 3].find(x => x > 1)</td>
-        <td>2</td>
-      </tr>
-      <tr>
-        <td>findIndex()</td>
-        <td>
-          Returns the index of the first element in the array that satisfies a
-          provided testing function.
-        </td>
-        <td>[1, 2, 3].findIndex(x => x > 1)</td>
-        <td>1</td>
-      </tr>
-    </table>
+      <h2>Number-Methoden</h2>
+      <table>
+        <tr>
+          <th>Method</th>
+          <th>Description</th>
+          <th>Example</th>
+          <th>Output</th>
+        </tr>
+        <tr>
+          <td>parseInt()</td>
+          <td>Parses a string and returns an integer.</td>
+          <td>const num = parseInt("42")</td>
+          <td>42</td>
+        </tr>
+        <tr>
+          <td>parseFloat()</td>
+          <td>Parses a string and returns a floating-point number.</td>
+          <td>const num = parseFloat("3.14")</td>
+          <td>3.14</td>
+        </tr>
+        <tr>
+          <td>toFixed()</td>
+          <td>Formats a number with a specified number of decimals.</td>
+          <td>(5.678).toFixed(2)</td>
+          <td>5.68</td>
+        </tr>
+        <tr>
+          <td>toPrecision()</td>
+          <td>Formats a number with a specified length.</td>
+          <td>(123.456).toPrecision(4)</td>
+          <td>123.5</td>
+        </tr>
+        <tr>
+          <td>isNaN()</td>
+          <td>Checks if a value is NaN (Not-a-Number).</td>
+          <td>isNaN("Hello")</td>
+          <td>true</td>
+        </tr>
+      </table>
 
-    <h2>Set- und Map-Methoden</h2>
-    <table>
-      <tr>
-        <th>Method</th>
-        <th>Description</th>
-        <th>Example</th>
-        <th>Output</th>
-      </tr>
-      <tr>
-        <td>Set.add()</td>
-        <td>Adds a new element to the Set.</td>
-        <td>const set = new Set(); set.add(1)</td>
-        <td>Set with element 1</td>
-      </tr>
-      <tr>
-        <td>Set.delete()</td>
-        <td>Removes a specified element from the Set.</td>
-        <td>set.delete(1)</td>
-        <td>Set without element 1</td>
-      </tr>
-      <tr>
-        <td>Set.has()</td>
-        <td>Checks if a specified element is in the Set.</td>
-        <td>set.has(1)</td>
-        <td>true</td>
-      </tr>
-      <tr>
-        <td>Set.clear()</td>
-        <td>Removes all elements from the Set.</td>
-        <td>set.clear()</td>
-        <td>Empty Set</td>
-      </tr>
-      <tr>
-        <td>Map.set()</td>
-        <td>Sets the value for a key in the Map.</td>
-        <td>const map = new Map(); map.set("name", "John")</td>
-        <td>Map with key "name" and value "John"</td>
-      </tr>
-      <tr>
-        <td>Map.get()</td>
-        <td>Returns the value associated with a key in the Map.</td>
-        <td>map.get("name")</td>
-        <td>"John"</td>
-      </tr>
-      <tr>
-        <td>Map.has()</td>
-        <td>Checks if a specified key exists in the Map.</td>
-        <td>map.has("name")</td>
-        <td>true</td>
-      </tr>
-      <tr>
-        <td>Map.delete()</td>
-        <td>Removes the entry for a specified key from the Map.</td>
-        <td>map.delete("name")</td>
-        <td>Map without key "name"</td>
-      </tr>
-    </table>
+      <h2>Array-Methoden für Suche und Prüfung</h2>
+      <table>
+        <tr>
+          <th>Method</th>
+          <th>Description</th>
+          <th>Example</th>
+          <th>Output</th>
+        </tr>
+        <tr>
+          <td>indexOf()</td>
+          <td>
+            Returns the first index at which a given element is found in the
+            array.
+          </td>
+          <td>[1, 2, 3, 2].indexOf(2)</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>lastIndexOf()</td>
+          <td>
+            Returns the last index at which a given element is found in the
+            array.
+          </td>
+          <td>[1, 2, 3, 2].lastIndexOf(2)</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>includes()</td>
+          <td>Checks if an array contains a certain element.</td>
+          <td>[1, 2, 3].includes(2)</td>
+          <td>true</td>
+        </tr>
+        <tr>
+          <td>find()</td>
+          <td>
+            Returns the first element in the array that satisfies a provided
+            testing function.
+          </td>
+          <td>[1, 2, 3].find(x => x > 1)</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>findIndex()</td>
+          <td>
+            Returns the index of the first element in the array that satisfies a
+            provided testing function.
+          </td>
+          <td>[1, 2, 3].findIndex(x => x > 1)</td>
+          <td>1</td>
+        </tr>
+      </table>
 
-    <h2>String-Methoden für Prüfung und Vergleich</h2>
-    <table>
-      <tr>
-        <th>Method</th>
-        <th>Description</th>
-        <th>Example</th>
-        <th>Output</th>
-      </tr>
-      <tr>
-        <td>startsWith()</td>
-        <td>Checks if a string starts with a specified substring.</td>
-        <td>"Hello, world!".startsWith("Hello")</td>
-        <td>true</td>
-      </tr>
-      <tr>
-        <td>endsWith()</td>
-        <td>Checks if a string ends with a specified substring.</td>
-        <td>"Hello, world!".endsWith("world!")</td>
-        <td>true</td>
-      </tr>
-      <tr>
-        <td>includes()</td>
-        <td>Checks if a string contains a specified substring.</td>
-        <td>"Hello, world!".includes("world")</td>
-        <td>true</td>
-      </tr>
-      <tr>
-        <td>charAt()</td>
-        <td>Returns the character at a specified index in a string.</td>
-        <td>"Hello".charAt(1)</td>
-        <td>"e"</td>
-      </tr>
-      <tr>
-        <td>charCodeAt()</td>
-        <td>
-          Returns the Unicode value of the character at a specified index.
-        </td>
-        <td>"Hello".charCodeAt(1)</td>
-        <td>101</td>
-      </tr>
-    </table>
+      <h2>Set- und Map-Methoden</h2>
+      <table>
+        <tr>
+          <th>Method</th>
+          <th>Description</th>
+          <th>Example</th>
+          <th>Output</th>
+        </tr>
+        <tr>
+          <td>Set.add()</td>
+          <td>Adds a new element to the Set.</td>
+          <td>const set = new Set(); set.add(1)</td>
+          <td>Set with element 1</td>
+        </tr>
+        <tr>
+          <td>Set.delete()</td>
+          <td>Removes a specified element from the Set.</td>
+          <td>set.delete(1)</td>
+          <td>Set without element 1</td>
+        </tr>
+        <tr>
+          <td>Set.has()</td>
+          <td>Checks if a specified element is in the Set.</td>
+          <td>set.has(1)</td>
+          <td>true</td>
+        </tr>
+        <tr>
+          <td>Set.clear()</td>
+          <td>Removes all elements from the Set.</td>
+          <td>set.clear()</td>
+          <td>Empty Set</td>
+        </tr>
+        <tr>
+          <td>Map.set()</td>
+          <td>Sets the value for a key in the Map.</td>
+          <td>const map = new Map(); map.set("name", "John")</td>
+          <td>Map with key "name" and value "John"</td>
+        </tr>
+        <tr>
+          <td>Map.get()</td>
+          <td>Returns the value associated with a key in the Map.</td>
+          <td>map.get("name")</td>
+          <td>"John"</td>
+        </tr>
+        <tr>
+          <td>Map.has()</td>
+          <td>Checks if a specified key exists in the Map.</td>
+          <td>map.has("name")</td>
+          <td>true</td>
+        </tr>
+        <tr>
+          <td>Map.delete()</td>
+          <td>Removes the entry for a specified key from the Map.</td>
+          <td>map.delete("name")</td>
+          <td>Map without key "name"</td>
+        </tr>
+      </table>
 
-    <h2>Array-Methoden für Umwandlung und Zusammenführung</h2>
-    <table>
-      <tr>
-        <th>Method</th>
-        <th>Description</th>
-        <th>Example</th>
-        <th>Output</th>
-      </tr>
-      <tr>
-        <td>Array.from()</td>
-        <td>Creates a new array from an array-like or iterable object.</td>
-        <td>const arr = Array.from("hello")</td>
-        <td>["h", "e", "l", "l", "o"]</td>
-      </tr>
-      <tr>
-        <td>Array.isArray()</td>
-        <td>Checks if a value is an array.</td>
-        <td>Array.isArray([1, 2, 3])</td>
-        <td>true</td>
-      </tr>
-      <tr>
-        <td>Array.of()</td>
-        <td>Creates a new array with a variable number of arguments.</td>
-        <td>const arr = Array.of(1, 2, 3)</td>
-        <td>[1, 2, 3]</td>
-      </tr>
-      <tr>
-        <td>Array.concat()</td>
-        <td>Concatenates arrays or values to an existing array.</td>
-        <td>[1, 2].concat([3, 4], 5)</td>
-        <td>[1, 2, 3, 4, 5]</td>
-      </tr>
-      <tr>
-        <td>Array.join()</td>
-        <td>Joins all elements of an array into a string.</td>
-        <td>[1, 2, 3].join(", ")</td>
-        <td>"1, 2, 3"</td>
-      </tr>
-    </table>
+      <h2>String-Methoden für Prüfung und Vergleich</h2>
+      <table>
+        <tr>
+          <th>Method</th>
+          <th>Description</th>
+          <th>Example</th>
+          <th>Output</th>
+        </tr>
+        <tr>
+          <td>startsWith()</td>
+          <td>Checks if a string starts with a specified substring.</td>
+          <td>"Hello, world!".startsWith("Hello")</td>
+          <td>true</td>
+        </tr>
+        <tr>
+          <td>endsWith()</td>
+          <td>Checks if a string ends with a specified substring.</td>
+          <td>"Hello, world!".endsWith("world!")</td>
+          <td>true</td>
+        </tr>
+        <tr>
+          <td>includes()</td>
+          <td>Checks if a string contains a specified substring.</td>
+          <td>"Hello, world!".includes("world")</td>
+          <td>true</td>
+        </tr>
+        <tr>
+          <td>charAt()</td>
+          <td>Returns the character at a specified index in a string.</td>
+          <td>"Hello".charAt(1)</td>
+          <td>"e"</td>
+        </tr>
+        <tr>
+          <td>charCodeAt()</td>
+          <td>
+            Returns the Unicode value of the character at a specified index.
+          </td>
+          <td>"Hello".charCodeAt(1)</td>
+          <td>101</td>
+        </tr>
+      </table>
+
+      <h2>Array-Methoden für Umwandlung und Zusammenführung</h2>
+      <table>
+        <tr>
+          <th>Method</th>
+          <th>Description</th>
+          <th>Example</th>
+          <th>Output</th>
+        </tr>
+        <tr>
+          <td>Array.from()</td>
+          <td>Creates a new array from an array-like or iterable object.</td>
+          <td>const arr = Array.from("hello")</td>
+          <td>["h", "e", "l", "l", "o"]</td>
+        </tr>
+        <tr>
+          <td>Array.isArray()</td>
+          <td>Checks if a value is an array.</td>
+          <td>Array.isArray([1, 2, 3])</td>
+          <td>true</td>
+        </tr>
+        <tr>
+          <td>Array.of()</td>
+          <td>Creates a new array with a variable number of arguments.</td>
+          <td>const arr = Array.of(1, 2, 3)</td>
+          <td>[1, 2, 3]</td>
+        </tr>
+        <tr>
+          <td>Array.concat()</td>
+          <td>Concatenates arrays or values to an existing array.</td>
+          <td>[1, 2].concat([3, 4], 5)</td>
+          <td>[1, 2, 3, 4, 5]</td>
+        </tr>
+        <tr>
+          <td>Array.join()</td>
+          <td>Joins all elements of an array into a string.</td>
+          <td>[1, 2, 3].join(", ")</td>
+          <td>"1, 2, 3"</td>
+        </tr>
+      </table>
+    </main>
+
+    <footer>
+      
+    </footer>
   </body>
 </html>
